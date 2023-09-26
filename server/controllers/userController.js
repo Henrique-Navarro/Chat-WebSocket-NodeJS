@@ -22,7 +22,7 @@ const registerUser = async (req, res) => {
     if (!validator.isEmail(email))
       return res.status(400).json("Email inválido!");
 
-    if (validator.isStrongPassword(password))
+    if (!validator.isStrongPassword(password))
       return res.status(400).json("Senha fraca demais!");
 
     user = new userModel({ name, email, password });
