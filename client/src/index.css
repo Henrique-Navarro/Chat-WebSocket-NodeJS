@@ -206,3 +206,18 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+}
