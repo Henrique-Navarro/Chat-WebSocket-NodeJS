@@ -6,6 +6,10 @@ body {
     background: rgb(40, 40, 40);
 }
 
+p {
+    /*color: white;*/
+}
+
 /* All users */
 .all-users {
     display: flex;
