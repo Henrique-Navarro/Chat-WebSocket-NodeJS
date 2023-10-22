@@ -30,6 +30,8 @@ io.on("connection", (socket) => {
     }
   });
 
+
+  //disconnect user
   socket.on("disconnect", () => {
     onlineUsers = onlineUsers.filter((user) => user.socketId !== socket.id);
 
